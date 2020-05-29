@@ -5,4 +5,6 @@ function generateMarkdown(data) {
 `;
 }
 
+// Have modular functions within the generateMarkdown function
+
 module.exports = generateMarkdown;
