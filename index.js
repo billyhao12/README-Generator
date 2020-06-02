@@ -6,22 +6,36 @@ const questions = [
     {
         type: "input",
         message: "Enter a Project Title",
-        name: "title"
+        name: "projectTitle"
+    },
+
+    {
+        type: "input",
+        message: "Enter a Project Description",
+        name: "description"
+    },
+
+    {
+       type: "input",
+       message: "Enter Instructions for Installation",
+       name: "installInstructions"
+    },
+
+    {
+        type: "input",
+        message: "Enter Usage Instructions",
+        name: "usage"
     }
+
 ];
 
 function writeToFile(fileName, data) {
 
     fs.writeFile(fileName, generateMarkdown(data), function(error) {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log('Success!');
-        }
+        if (error) console.log(error);
+        else console.log('Success!');
     });
 
-    // Do stuff with user response
-     console.log(generateMarkdown(response));
 }
 
 function init() {
@@ -31,8 +45,9 @@ function init() {
     .then( (response) => {
         
         writeToFile('README.md', response);
-       
+
     });
+
 }
 
 init();
