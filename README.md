@@ -37,3 +37,8 @@ The instructors at the UW Coding Boot Camp as well as my fellow colleagues assis
 ## Contributing
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://www.contributor-covenant.org/)
+
+## Questions
+
+![GitHub Profile Picture](https://github.com/billyhao12.png)
+Email me at <billyhao12@gmail.com>

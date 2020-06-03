@@ -35,11 +35,13 @@ ${generateAdditionalContribution(data.additionalContribution)}
 
 ${generateTests(data.tests)}
 
-## Frequently Asked Questions
+## Questions
 
-${generateQuestions(data.questions)}
+${generateQuestions(data.gitHubUsername, data.email)}
 `
 }
+
+// Functions within the generateMarkdown function
 
 function generateTitle(projectTitle) {
   return `# ${projectTitle}`;
@@ -56,7 +58,7 @@ function tableOfContents() {
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
-* [Frequently Asked Questions](#frequently-asked-questions)`;
+* [Questions](#questions)`;
 }
 
 function installInstructions(installInstructions) {
@@ -97,8 +99,10 @@ function generateTests(tests) {
   return tests;
 }
 
-function generateQuestions(questions) {
-  return questions;
+function generateQuestions(gitHubUsername, email) {
+  return `![GitHub Profile Picture](https://github.com/${gitHubUsername}.png)
+  Email me at <${email}>`;
 }
 
+// Exporting the generateMarkdown function
 module.exports = generateMarkdown;

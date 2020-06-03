@@ -61,8 +61,14 @@ const questions = [
 
     {
         type: "input",
-        message: "Enter frequently asked questions",
-        name: "questions"
+        message: "Enter GitHub username to generate profile picture",
+        name: "gitHubUsername"
+    },
+
+    {
+        type: "input",
+        message: "Enter email to contact you with",
+        name: "email"
     }
 ];
 
