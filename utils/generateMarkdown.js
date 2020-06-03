@@ -101,7 +101,8 @@ function generateTests(tests) {
 
 function generateQuestions(gitHubUsername, email) {
   return `![GitHub Profile Picture](https://github.com/${gitHubUsername}.png)
-  Email me at <${email}>`;
+
+Email me at <${email}>`;
 }
 
 // Exporting the generateMarkdown function

@@ -26,6 +26,9 @@ Run the application by invoking the following command in Node.js:
 node index.js
 ```
 
+Follow the prompts to generate your README file.
+Click [here](https://youtu.be/tJ90DOZQp6Q) to view a YouTube video demonstrating the application's usage.
+
 ## Credits
 
 The instructors at the UW Coding Boot Camp as well as my fellow colleagues assisted me in completing this application.
@@ -41,4 +44,5 @@ The instructors at the UW Coding Boot Camp as well as my fellow colleagues assis
 ## Questions
 
 ![GitHub Profile Picture](https://github.com/billyhao12.png)
+
 Email me at <billyhao12@gmail.com>
