@@ -81,16 +81,9 @@ function writeToFile(fileName, data) {
 
 }
 
-function init() {
-
-    inquirer
-    .prompt(questions)
-    .then( (response) => {
-        
-        writeToFile('newREADME.md', response);
-
-    });
-
+async function init() {
+    const response = await inquirer.prompt(questions);
+    writeToFile('newREADME.md', response);
 }
 
 init();
